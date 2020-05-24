@@ -1,0 +1,526 @@
+/* Keyframes */
+@-webkit-keyframes spin {
+	100%{ -webkit-transform: rotateX(1turn); -webkit-transition: 5s; }
+}
+
+@keyframes spin{
+	100%{ transform: rotateX(1turn); transition: 5s; }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Universal Styles */
+html, body{
+	-webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+	-moz-box-sizing: border-box; /* Firefox ≤ 28 */
+    box-sizing: border-box; /* Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1 */
+  	padding: 0;
+	background-color: #303030;
+	color: #303030;
+
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+h1{
+	font-size: 4rem;
+	text-align: center;
+	font-family: 'Anton', Georgia, sans-serif;
+	line-height: 5rem;
+	padding-bottom: 1rem;
+/*	transition: transform 3s ease;
+	transform: scale(1.5);*/
+}
+
+h2{
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 2rem;
+}
+
+h3{
+	font-weight: 700;
+	font-size: 1.2rem;
+	padding: 0.5rem 0 0;
+}
+
+h4{
+	font-weight: 700;
+	color: #E4CBCE;
+	font-size: 0.9rem;
+	padding: 0.5rem 0;
+	margin-bottom: 1.5rem;
+}
+
+hr{
+	width: 15rem;
+	border: .1rem solid;
+	margin-bottom: 1rem;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+/* Navigation Styling */
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 25px 15px;
+}
+
+.main_nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.main_nav li{
+	padding: 10px 10px;
+}
+
+.main_nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1em;
+}
+
+.main_nav a:hover{
+	color: #F3C4BF;
+}
+
+#nav_logo{
+	margin-right: auto;
+}
+
+#nav_logo:hover{
+	animation-name: spin; 
+	animation-duration: 5s; 
+	animation-iteration-count: infinite;
+}
+
+#rsn_logo{
+	width: 4.5rem;
+}
+
+/* Intro Banner Styling */
+#banner{
+	background-color: #FDF4F3;
+	height: 75vh;
+	padding: 5rem 2rem;
+	overflow: hidden;
+}
+
+.titles{
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+.titles p{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.portrait{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .5s ease;
+}
+
+.portrait:hover{
+	transform: scale(1.2);
+}
+
+.logo, .portrait{
+	display: block;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.logo{
+	width: 5rem;
+	display: none;
+}
+
+#about, #work, #contact{
+	background-color: #fff
+}
+
+/* About Styling */
+#about{
+	text-align: right;
+	padding: 1.5rem;
+	border-left: 20px solid #E4CBCE;
+}
+
+#about p{
+	line-height: 1.4rem;
+	padding-bottom: 1rem;
+}
+
+.full_name_logo{
+	display: none;
+}
+
+/* Work Section Styling */
+#videography, #photography, #contact{
+	padding: 1.5rem;
+}
+
+/* UX Styling */
+#ux_design{
+	border-right: 120px solid #E4CBCE;
+	padding: 1.5rem;
+}
+
+.b-link{
+	background-color: white;
+	border: 2px solid #F3C4BF;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	margin: 4px 2px 4px 0;
+	font-weight: 400;
+	color: grey;
+}
+
+.website{
+	margin-bottom: 0.75rem;
+}
+
+.b-link:hover{
+	background-color: #FDF4F3;
+}
+
+.button-links{
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+/* Gallery Styling */ 
+#gallery{
+	display: grid;
+	align-items: center;
+	grid-gap: 0.5rem;
+}
+
+.text{
+	font-size: 2.5rem;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 1s ease;
+	transition: -ms-transform 1s ease;
+	transition: 1s ease;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    transform: translate(-50%, -50%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.text:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.gallery_card{
+	position: relative;
+}
+
+/* Video Styling */ 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.mycontain{
+	background-color: #E4CBCE;
+	padding: 10px;
+}
+
+/* Contact Form */
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+textarea{
+	resize: none;
+	height: 6rem;
+}
+
+/* input styles */
+input[type=text], textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+input[type=text]:focus, textarea:focus, input[type=submit]:focus{
+	outline: none !important;
+	border: 2px solid #F3C4BF;
+	padding: 11px;
+}
+
+input[type=submit]:focus{
+	padding: 10px 18px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* submit button styles */
+input[type=submit]{
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-top: .5rem;
+	width: 50%;
+	background-color: #E4CBCE;
+}
+
+input[type=submit]:hover{
+	background-color: #303030;
+	color: #E4CBCE;
+	font-weight: 700;
+}
+/* Social Media Buttons */
+.social-media{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.fa{
+	border-radius: 50%;
+	width: 2rem;
+	margin: 1rem 1rem;
+	color: white;
+}
+
+.fa:hover{
+	opacity: 0.7;
+}
+
+/* Footer Styling */
+footer{
+	color: white;
+	text-align: center;
+	}
+
+.copyright{
+	padding: .5rem;
+	font-size: .75rem;
+}
+
+
+/* Back to top button */
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #FEB9B4; 
+  color: white; 
+  cursor: pointer; 
+  padding: 1px; 
+  border-radius: .5rem;
+  font-size: 1rem;
+}
+
+#myBtn:hover {
+  background-color: #303030;
+}
+
+/*----------     Media Queries     ----------*/
+
+/* -----     TABLET     ----- */
+@media only screen and (min-width: 768px){
+	#gallery{
+		grid-gap: 1rem;	
+		padding: 0 20px;
+		border-left: 2rem solid #E4CBCE;
+	}
+
+	h1{
+		font-size: 5rem;
+		line-height: 6rem;
+	}
+
+	.main_nav li{
+		padding: 10px 20px;
+	}
+
+	.main_nav a{
+		font-size: 1.2rem;
+	}
+
+	#banner, #about, #work, #contact{
+		margin: 0 2rem 2rem;
+	}
+
+	#about, #work, #contact{
+		padding: 3rem;
+	}
+
+	.block{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	/* Footer Styling */
+	footer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 1rem;
+		margin-top: 0;
+		}
+
+	.copyright{
+		padding-right: 5rem;
+	}
+
+	#contact{
+		margin-bottom: 1rem;
+	}
+
+}
+
+/* -----    DESKTOP     ----- */
+@media only screen and (min-width: 960px){
+	#gallery{
+		grid-template-columns: 48% 48%;
+		grid-gap: 1rem;
+		max-width: 1200px;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	
+
+	.full_name_logo{
+		display: block;
+		grid-area: name;
+	}
+	
+	.aboutme{
+		grid-area: about;
+	}
+
+	.container{
+		display: grid;
+		grid-template-areas: "name about";
+	}
+
+	.form{
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	input[type=submit]{
+		width: 100%;
+	}
+
+	.titles{
+		grid-area: titles;
+	}
+	.photo{
+		grid-area: photos;
+		transform: scale(1.2);/* Firefox 16+, IE 10+, Opera */
+		-webkit-transform: scale(1.2);  /* Chrome, Opera 15+, Safari 3.1+ */
+    	-ms-transform: scale(1.2);  /* IE 9 */
+	}
+	
+	.logo{
+		display: block;
+	}
+
+	#banner{
+		display: grid;
+		grid-template-areas: "titles photos";
+		padding-bottom: 0;
+		height: 60vh;
+
+	}
+
+
+}

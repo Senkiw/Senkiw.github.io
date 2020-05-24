@@ -1,129 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1" />
-    <meta name="description" content="Reanne Senkiw Web Design Portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Reanne Senkiw">
+	<meta name="description" content="Reanne Senkiw Portfolio">
+	<title>Reanne Senkiw Web Portfolio</title>
 
-    <title>R Senkiw Portfolio</title>
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Add Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Pacifico|Quicksand:300|VT323|Nunito+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<!-- Link to CSS --> 
+	<link rel="stylesheet" media="screen" href="style.css">
 
-    
+	<!-- Link to Google Font --> 
+	<link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,600,700|Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="main_nav">
+				<li id="nav_logo"><a href="#banner"><img src="images/logo.png" alt="RSN logo" id="rsn_logo"></a></li>
+				<li class="nav_about"><a href="#about">About</a></li>
+				<li class="nav_work"><a href="#work">Work</a></li>
+				<li class="nav_contact"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Back to top -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 
+	<section id="banner">
+		<div class="titles">
+			<h1>Hello,<br>I'm Reanne.</h1><hr>
+			<p>UX Designer</p>
+			<p>Photographer</p>
+			<p>Videographer</p>
+		</div>
+		<div class="photo">
+			<img src="images/portrait.jpg" alt="a photo of me" class="portrait">
+			<img src="images/logo.png" alt="logo" class="logo">
+		</div>
+	</section>
+	<section id="about">
+		<div class="container">
+			<img src="images/full-name.jpg" alt="reanne senkiw nadeau" class="full_name_logo">
+			<div class="aboutme">
+				<h2>About</h2>
+				<p>I'm a UX Designer, Front-End Developer, Phtographer & Videographer based in Ottawa, ON.</p>
+				<p>I am currently studying at Algonquin College, completing the Interactive Media Design program.</p>
+				<p>I like to create clean designs, smart user interface and accessible code.</p>
+				<p>I specialize in street photography, portraits and promotional videos/content.</p>
+			</div>
+		</div>
+	</section>
+	<section id="work">
+		<article id="ux_design">
+			<h2>UX Design</h2>
+			<div class="block">
+				<img src="images/one.png" alt="vitamart website design" class="website">
+				<div class="button-links">
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/4ec444d7-1b70-4a5e-48f5-ce50576682fb-38f5/" target="_blank">Desktop</a>
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/297ee6dd-4801-44b4-4fa0-b79ac1ad7bd4-5f4f/" target="_blank">Tablet</a>
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/aeedd67f-2528-4e50-6958-c7b5617fb270-d8dc/" target="_blank">Mobile</a>
+				</div>
+				<p>UX/UI Design, Re-Branding</p>
+				<h3>Vitamart</h3>
+				<h4>Responsive Website,<br> Logo</h4>
+			</div>
+			<div class="block">
+				<img src="images/profile.png" alt="vitamart website design" class="website">
+				<div class="button-links">
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/4855a162-f800-4921-64e7-bf69fcc23034-3e64/?hints=off" target="_blank">Desktop</a>
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/2f281b3e-8087-4ad4-7387-25b537d55bb5-5919/?hints=off" target="_blank">Tablet</a>
+					<a role="button" class="b-link" href="https://xd.adobe.com/view/d7e98f91-8ff7-4f17-479e-36233e39cb3b-a1d8/?hints=off" target="_blank">Mobile</a>
+				</div>
+				<p>UX/UI Design</p>
+				<h3>Self Promotion Website</h3>
+				<h4>Responsive Website,<br> Logo</h4>
+			</div>
+		</article>
+		<article id="photography">
+			<h2>Photography</h2>
+			<div id="gallery">
+				<!-- insert photos here -->
+			</div>
+		</article>
+		<article id="videography">
+			<h2>Videography</h2>
+			<div class="mycontain">
+				<div class="resp-container">
+					<iframe class="resp-iframe" src="https://www.youtube.com/embed/oiPFOraqyX4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="contact">
+		<h2>Get in Contact</h2>
+		<form class="form">
+			<label for="name-input" class="name">Name</label>
+			<input type="text" name="name" id="name-input" required="required" placeholder="John Denver">
 
-    <!--Link to Custom Styles-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+			<label for="email-input" class="email">Email</label>
+			<input type="text" name="email" id="email-input" required="required" placeholder="jdenver@aol.com">
 
-  <body>
-
-    <header>
-      <a href="#About" id="logo">SENKIW</a>
-      <!--<a href="#Home">Skip to content</a>-->
-      <nav>
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!--img src="images/intropic.jpg" id="cover"-->
-      <div id="cover">
-      </div>
-      
-      <article id="About">
-        
-            <div class="img-crop">
-              <img src="images/rsenkiw.png" alt="My face">
-            </div>
-            <div class="about-text">
-              <p>Front-End Developer and Designer.  </p>
-              <p>Interested in expanding more into UX Design and Accessible content. </p>
-
-              <p>Clean simple design, great usability.</p>
-            </div>
-            <div class="badges">
-              <img src="images/CSS3HTML5.png" alt="">
-              <img class="sketch" src="images/sketchicon.png">
-            </div>
-      </article>
-
-
-      <article id="Portfolio">
-        <h1>Portfolio</h1>
-          <div id="gallery">
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-            <figure>
-              <img src="http://www.fillmurray.com/400/400" alt="">
-              <figcaption>Project: Used:</figcaption>
-            </figure>
-          </div>
-      </article>
-
-      <article id="Contact">
-        <h1>Contact Me</h1>
-        <form action="" method="" aria-labelledby="contact">
-          <fieldset>
-            <input type="text" name="name" aria-label="name" placeholder="Name">
-
-            <input type="email" name="email" required="required" aria-label="email" placeholder="Email">
-            <input type="subject" name="subject" aria-label="subject" placeholder="Subject">
-
-            <textarea id="comments" name="comments" cols="20" rows="4" required="required" aria-label="message" placeholder="Message"></textarea>
-
-            <input id="submit" type="submit" value="Submit">
-          </fieldset>
-        </form>
-        <div id="contactinfo">
-          <p><img src="images/phone.png">613-724-4363</p>
-          <p><img src="images/envelope.png" alt="envelope"> reannesenkiw@gmail.com</p>
-          <p><img src="images/link.png" alt="linkedin logo">www.linkedin.com/in/r-senkiw</p>
-          <p><img src="images/earth.png" alt="globe"> www.github.com/Senkiw</p>
-          <p><img src="images/map.png" alt="map place marker">Ottawa, ON</p>
-          </div>
-
-        <!--Social Bar-->
-        <div id="social-media">
-          <a href="https://www.facebook.com/reanne.senkiw" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/r_senkiw" class="fa fa-twitter"></a>
-          <a href="https://plus.google.com/107031824833103240372" class="fa fa-google-plus"></a>
-          <a href="https://www.linkedin.com/in/reanne-senkiw-2ab8a7140" class="fa fa-linkedin"></a>
-          <a href="https://www.instagram.com/rsenkiw/" class="fa fa-instagram"></a>
-          <a href="https://senkiwblog.wordpress.com" class="fa fa-wordpress"></a>
-          <a href="https://github.com/Senkiw" class="fa fa-github"></a>
-        </div>
-      </article>
-    </main>
-    <footer>
-          <p>&copy; Senkiw 2017</p>
-    </footer>
-
-
-  </body>
+			<label for="text-input" class="message">Message</label>
+			<textarea name="message" id="text-input" required="required"></textarea>
+			<input type="submit" name="submit" class="button" value="Submit">
+		</form>
+	</section>
+	<footer class="footer">
+	  <div class="social-media">
+	  	<a href="https://github.com/Senkiw" target="_blank" class="fa fa-github"></a>
+	  	<a href="https://senkiwblog.wordpress.com" target="_blank" class="fa fa-wordpress"></a>
+	  	<a href="https://www.instagram.com/rsenkiw/" target="_blank" class="fa fa-instagram"></a>
+	  </div>
+	  <p class="copyright">Copyright &copy; 2019 Senkiw</p>
+	</footer>
+	<script src="index.js"></script>
+	<script src="https://use.fontawesome.com/b65615a1b7.js"></script>
+</body>
 </html>
