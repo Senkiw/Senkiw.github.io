@@ -1,4 +1,4 @@
-const $gallery = document.getElementById('gallery');
+/*const $gallery = document.getElementById('gallery');
 
 const gallery = []
 
@@ -14,7 +14,7 @@ for (let j = 0; j < 6; j++){
 	gallery.push(`<div class="gallery_card" tabindex="0"><img class="image" src="images/`+`${animals[j].image}" alt="`+`${animals[j].alt}">`+`<div class="overlay"><h4 class="text">${animals[j].name}</h2></div></div>`)
 }
 
-$gallery.innerHTML = gallery.join('')
+$gallery.innerHTML = gallery.join('')*/
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
